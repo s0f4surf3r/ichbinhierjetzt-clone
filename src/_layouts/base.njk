@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }} | ICH BIN HIER JETZT</title>
+  <meta name="description" content="{{ description | default('Doris R. Mumenthaler – Traumasensibles Coaching, Jin Shin Jyutsu, Dornach') }}">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="{{ title }} | ICH BIN HIER JETZT">
+  <meta property="og:description" content="{{ description | default('Traumasensibles Coaching und Jin Shin Jyutsu – Doris R. Mumenthaler, Dornach') }}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ICH BIN HIER JETZT">
+  <meta property="og:locale" content="de_CH">
+  <color-scheme content="light only">
+</head>
+<body class="{{ bodyClass | default('') }}">
+
+  <nav class="main-nav">
+    <ul>
+      <li><a href="/"{% if page.url == "/" %} class="active"{% endif %}>Willkommen</a></li>
+      <li><a href="/traumasensibles-coaching/"{% if page.url == "/traumasensibles-coaching/" %} class="active"{% endif %}>Traumasensibles Coaching</a></li>
+      <li><a href="/jin-shin-jyutsu/"{% if page.url == "/jin-shin-jyutsu/" %} class="active"{% endif %}>Jin Shin Jyutsu</a></li>
+      <li><a href="/doris/"{% if page.url == "/doris/" %} class="active"{% endif %}>Doris R. Mumenthaler</a></li>
+      <li><a href="/kosten/"{% if page.url == "/kosten/" %} class="active"{% endif %}>Energetischer Ausgleich / Kosten</a></li>
+      <li><a href="/kontakt/"{% if page.url == "/kontakt/" %} class="active"{% endif %}>Kontakt</a></li>
+      <li><a href="/galerie/"{% if page.url == "/galerie/" %} class="active"{% endif %}>Galerie</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    {{ content | safe }}
+  </main>
+
+  <footer>
+    <a href="/impressum/">Impressum</a>
+    <a href="/datenschutz/">Datenschutz</a>
+  </footer>
+
+</body>
+</html>

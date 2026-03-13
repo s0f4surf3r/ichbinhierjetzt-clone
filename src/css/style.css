@@ -1,0 +1,341 @@
+/* === Fonts === */
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/roboto-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/roboto-bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* === Farbpalette === */
+:root {
+  --rosa-dunkel: #C99389;
+  --rosa-hell: #E3AEA6;
+  --weiss: #FFFFFF;
+  --dunkelgrau: #323335;
+  --teal: #8FAFAF;
+  color-scheme: light only;
+}
+
+/* === Reset === */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === Basis === */
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: 'Roboto', -apple-system, 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+  color: var(--weiss);
+  background: var(--rosa-dunkel);
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* === Navigation === */
+.main-nav {
+  background: var(--rosa-dunkel);
+  padding: 1rem 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 1.5rem;
+}
+
+.main-nav a {
+  color: var(--weiss);
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  padding: 0.3rem 0;
+  transition: opacity 0.2s;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  opacity: 0.7;
+}
+
+/* === Sektionen === */
+.section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.section--rosa-dunkel {
+  background: var(--rosa-dunkel);
+}
+
+.section--rosa-hell {
+  background: var(--rosa-hell);
+}
+
+.section--teal {
+  background: var(--teal);
+}
+
+.section--weiss {
+  background: var(--weiss);
+  color: var(--dunkelgrau);
+}
+
+.section--image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* === Content Container === */
+.content-narrow {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.content-wide {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* === Typografie === */
+h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: clamp(1.3rem, 3vw, 2rem);
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 2;
+}
+
+/* === Sterne-Trenner === */
+.stars {
+  font-size: 1.2rem;
+  letter-spacing: 0.5rem;
+  margin: 2rem 0;
+  opacity: 0.8;
+}
+
+/* === Bilder === */
+.section-image {
+  width: 100%;
+  max-width: 500px;
+  margin: 1.5rem auto;
+  display: block;
+}
+
+.section-image--wide {
+  max-width: 100%;
+}
+
+.section-image--round {
+  border-radius: 50%;
+}
+
+/* === Split Layout (Bild + Text nebeneinander) === */
+.split {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.split--reverse {
+  flex-direction: row-reverse;
+}
+
+.split__text {
+  flex: 1;
+}
+
+.split__image {
+  flex: 0 0 40%;
+}
+
+.split__image img {
+  width: 100%;
+  display: block;
+}
+
+/* === 3-Spalten Layout (Jin Shin Jyutsu) === */
+.three-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.three-cols img {
+  width: 100%;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+/* === Galerie Grid === */
+.galerie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.5rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+.galerie-grid img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  display: block;
+}
+
+/* === Buttons === */
+.btn-weiter {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background: rgba(255, 255, 255, 0.8);
+  color: var(--rosa-dunkel);
+  border: 2px solid var(--weiss);
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  transition: background 0.2s;
+}
+
+.btn-weiter:hover {
+  background: var(--weiss);
+}
+
+/* === Signatur === */
+.signatur {
+  font-style: italic;
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+}
+
+/* === Footer === */
+footer {
+  background: var(--rosa-dunkel);
+  text-align: center;
+  padding: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+footer a {
+  color: var(--weiss);
+  text-decoration: none;
+  font-size: 0.8rem;
+  margin: 0 1rem;
+  opacity: 0.7;
+}
+
+footer a:hover {
+  opacity: 1;
+}
+
+/* === Impressum / Datenschutz === */
+.page-legal {
+  background: var(--weiss);
+  color: var(--dunkelgrau);
+}
+
+.page-legal main {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+.page-legal p,
+.page-legal li {
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.page-legal h1 {
+  font-size: 1.5rem;
+  color: var(--dunkelgrau);
+}
+
+.page-legal h2 {
+  font-size: 1.2rem;
+  color: var(--dunkelgrau);
+  margin-top: 2rem;
+}
+
+/* === Mobile === */
+@media (max-width: 768px) {
+  .main-nav ul {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .split {
+    flex-direction: column;
+  }
+
+  .split--reverse {
+    flex-direction: column;
+  }
+
+  .split__image {
+    flex: none;
+    width: 100%;
+  }
+
+  .three-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 3rem 1.5rem;
+  }
+}
