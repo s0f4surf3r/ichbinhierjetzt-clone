@@ -133,6 +133,43 @@ strong, b {
   justify-content: center;
 }
 
+/* Sektion mit Hintergrundbild + farbigem Overlay */
+.section--bg {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section--bg .section-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.section--bg .content-narrow,
+.section--bg .content-wide,
+.section--bg .split {
+  position: relative;
+  z-index: 1;
+}
+
+.overlay--weiss {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.overlay--rosa-dunkel {
+  background: rgba(201, 147, 137, 0.75);
+}
+
+.overlay--rosa-hell {
+  background: rgba(227, 174, 166, 0.77);
+}
+
+.overlay--teal {
+  background: rgba(137, 191, 201, 0.76);
+}
+
 /* === Content Container === */
 .content-narrow {
   max-width: 700px;
