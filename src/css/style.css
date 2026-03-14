@@ -48,7 +48,8 @@ body {
 
 /* === Navigation === */
 .main-nav {
-  background: var(--rosa-dunkel);
+  background: rgba(0, 0, 0, 0.08);
+  background-color: #b8817a;
   padding: 1rem 0;
   text-align: center;
   position: sticky;
@@ -74,9 +75,13 @@ body {
   transition: opacity 0.2s;
 }
 
-.main-nav a:hover,
-.main-nav a.active {
+.main-nav a:hover {
   opacity: 0.7;
+}
+
+.main-nav a.active {
+  border-bottom: 1px solid var(--weiss);
+  padding-bottom: 0.2rem;
 }
 
 /* === Sektionen === */
