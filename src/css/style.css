@@ -62,8 +62,8 @@ strong, b {
 
 /* === Navigation === */
 .main-nav {
-  background-color: #b8817a;
-  padding: 1rem 0;
+  background-color: var(--rosa-dunkel);
+  padding: 1rem 2rem;
   text-align: center;
   position: sticky;
   top: 0;
@@ -94,6 +94,40 @@ strong, b {
 .main-nav a.active {
   border-bottom: 1px solid var(--weiss);
   padding-bottom: 0.2rem;
+}
+
+/* Burger Button (hidden on desktop) */
+.burger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.burger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--weiss);
+  margin: 5px 0;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.burger.is-open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger.is-open span:nth-child(2) {
+  opacity: 0;
+}
+
+.burger.is-open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 
 /* === Sektionen === */
@@ -300,6 +334,10 @@ p {
   background: var(--rosa-dunkel);
 }
 
+.galerie-split__tile--rosa-hell {
+  background: var(--rosa-hell);
+}
+
 .galerie-split__image {
   flex: 1;
   overflow: hidden;
@@ -427,9 +465,32 @@ footer a:hover {
 
 /* === Mobile === */
 @media (max-width: 768px) {
+  .main-nav {
+    position: relative;
+    min-height: 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .burger {
+    display: block;
+  }
+
   .main-nav ul {
+    display: none;
     flex-direction: column;
     gap: 0.3rem;
+    padding: 1rem 0 0.5rem;
+  }
+
+  .main-nav ul.is-open {
+    display: flex;
+  }
+
+  .main-nav a {
+    padding: 0.5rem 0;
+    font-size: 1.1rem;
   }
 
   .split {

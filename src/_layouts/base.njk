@@ -17,6 +17,11 @@
 <body class="{{ bodyClass | default('') }}">
 
   <nav class="main-nav">
+    <button class="burger" aria-label="Menü öffnen" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
     <ul>
       <li><a href="/"{% if page.url == "/" %} class="active"{% endif %}>Willkommen</a></li>
       <li><a href="/traumasensibles-coaching/"{% if page.url == "/traumasensibles-coaching/" %} class="active"{% endif %}>Traumasensibles Coaching</a></li>
@@ -27,6 +32,13 @@
       <li><a href="/galerie/"{% if page.url == "/galerie/" %} class="active"{% endif %}>Galerie</a></li>
     </ul>
   </nav>
+  <script>
+    document.querySelector('.burger').addEventListener('click', function() {
+      this.classList.toggle('is-open');
+      this.setAttribute('aria-expanded', this.classList.contains('is-open'));
+      document.querySelector('.main-nav ul').classList.toggle('is-open');
+    });
+  </script>
 
   <main>
     {{ content | safe }}
