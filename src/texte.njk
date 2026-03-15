@@ -1,0 +1,47 @@
+---
+layout: base.njk
+title: Texte
+description: Gedanken, Gedichte und Impulse von Doris R. Mumenthaler
+---
+<style>
+  .texte-page { background: var(--weiss); color: var(--dunkelgrau); min-height: 80vh; }
+  .texte-hero { text-align: center; padding: 3.5rem 2rem 2rem; }
+  .texte-hero h1 { font-family: 'Raleway', sans-serif; font-weight: 300; font-size: clamp(2rem, 5vw, 3rem); color: var(--rosa-dunkel); margin-bottom: 0.5rem; }
+  .texte-hero p { color: var(--dunkelgrau); font-style: italic; opacity: 0.6; }
+  .texte-ornament { text-align: center; color: var(--teal); opacity: 0.4; letter-spacing: 0.5em; margin: 1.5rem 0 2.5rem; font-size: 0.9rem; }
+  .texte-list { max-width: 680px; margin: 0 auto; padding: 0 2rem 4rem; list-style: none; }
+  .texte-item { border-bottom: 1px solid rgba(201,147,137,0.2); }
+  .texte-item a { display: block; padding: 1.8rem 0; text-decoration: none; transition: opacity 0.2s; }
+  .texte-item a:hover { opacity: 0.75; }
+  .texte-item-type { font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--rosa-dunkel); margin-bottom: 0.4rem; }
+  .texte-item-title { font-family: 'Raleway', sans-serif; font-weight: 300; font-size: 1.25rem; color: var(--rosa-dunkel); margin-bottom: 0.4rem; }
+  .texte-item-date { font-size: 0.82rem; color: var(--dunkelgrau); opacity: 0.6; margin-bottom: 0.5rem; }
+  .texte-item-excerpt { font-size: 0.9rem; color: var(--dunkelgrau); line-height: 1.7; opacity: 0.7; }
+</style>
+
+<div class="texte-page">
+  <div class="texte-hero">
+    <h1>Texte</h1>
+    <p>Gedanken, Gedichte und Impulse</p>
+  </div>
+  <div class="texte-ornament">✦ ✦ ✦</div>
+
+  {% if collections.sortedTexte | length > 0 %}
+  <ul class="texte-list">
+    {% for item in collections.sortedTexte %}
+    <li class="texte-item">
+      <a href="{{ item.url }}">
+        <div class="texte-item-type">{{ item.data.type }}</div>
+        <div class="texte-item-title">{{ item.data.title }}</div>
+        <div class="texte-item-date">{{ item.date | readableDate }}</div>
+        {% if item.data.excerpt %}
+        <div class="texte-item-excerpt">{{ item.data.excerpt }}</div>
+        {% endif %}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p style="text-align:center; padding:3rem 2rem; color:var(--dunkelgrau); font-style:italic; opacity:0.6;">Noch keine Texte veröffentlicht.</p>
+  {% endif %}
+</div>
