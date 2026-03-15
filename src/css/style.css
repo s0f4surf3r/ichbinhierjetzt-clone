@@ -321,9 +321,8 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   padding: 4rem 3rem;
-  text-align: center;
+  text-align: left;
 }
 
 .galerie-split__tile--teal {
