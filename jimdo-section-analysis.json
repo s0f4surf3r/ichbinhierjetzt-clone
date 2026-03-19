@@ -1,0 +1,438 @@
+{
+  "analysis_date": "2026-03-14",
+  "source": "https://ichbinhierjetzt.ch",
+  "global": {
+    "header_bg": "rgb(201, 147, 137)",
+    "footer_bg": "rgb(201, 147, 137)",
+    "body_bg": "rgb(255, 255, 255)",
+    "nav_text_color": "white (assumed from dark bg)",
+    "note": "Jimdo SPA - header is fixed position, footer wraps in same color as header"
+  },
+  "color_palette": {
+    "rose_light": "rgb(227, 174, 166) / #E3AEA6",
+    "rose_dark": "rgb(201, 147, 137) / #C99389",
+    "teal": "rgb(137, 191, 201) / #89BFC9",
+    "teal_light": "rgb(166, 219, 227) / #A6DBE3",
+    "white": "rgb(255, 255, 255)",
+    "dark_text": "rgb(50, 51, 53) / #323335",
+    "white_text": "rgb(255, 255, 255)"
+  },
+  "pages": {
+    "homepage": {
+      "url": "https://ichbinhierjetzt.ch/",
+      "title": "Doris R. Mumenthaler - Coaching | ICH BIN HIER JETZT",
+      "sections": [
+        {
+          "index": 0,
+          "description": "Hero: ICH BIN HIER JETZT + intro text + 'Doris Regula Mumenthaler'",
+          "bg": "rgb(227, 174, 166)",
+          "hasBackgroundImage": true,
+          "imgSrc": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,format=auto,trim=0;0;0;0,width=800,height=129/image/455508072/08f7390e-f0c8-4339-b944-60a4dda07210.png",
+          "imgNote": "This is the logo/brand image PNG (1280x205), NOT a photo background",
+          "overlayBg": "none",
+          "overlayOpacity": "n/a",
+          "textColor": "rgb(255, 255, 255)"
+        },
+        {
+          "index": 1,
+          "description": "'jedoch' section - pain points list",
+          "bg": "rgb(255, 255, 255)",
+          "hasBackgroundImage": true,
+          "imgSrc": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,format=auto,width=1920,height=746/image/454123694/253e1032-e862-4010-8f6c-a37fa3d8b150.jpg",
+          "overlayBg": "rgba(255, 255, 255, 0.8)",
+          "overlayOpacity": "1",
+          "textColor": "rgb(50, 51, 53)"
+        },
+        {
+          "index": 2,
+          "description": "'... im scheinbar Dunklen versunken, atmen wir Licht ...'",
+          "bg": "rgb(201, 147, 137)",
+          "hasBackgroundImage": true,
+          "imgSrc": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,format=auto,trim=0;0;0;150,width=1920,height=636/image/455519895/3438c1f1-0f3a-438a-9504-6f8da26c93d5.jpg",
+          "overlayBg": "rgba(201, 147, 137, 0.747)",
+          "overlayOpacity": "0",
+          "overlayNote": "Overlay exists but opacity=0, so image shows through without color tint",
+          "textColor": "rgb(255, 255, 255)"
+        },
+        {
+          "index": 3,
+          "description": "Empty spacer section (120px height)",
+          "bg": "rgb(227, 174, 166)",
+          "hasBackgroundImage": false,
+          "imgSrc": "none",
+          "overlayBg": "none",
+          "overlayOpacity": "n/a",
+          "note": "Pure spacer, no content, 120px tall"
+        },
+        {
+          "index": 4,
+          "description": "'Du bist die Wirklichkeit' - long poem/text",
+          "bg": "rgb(201, 147, 137)",
+          "hasBackgroundImage": true,
+          "imgSrc": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,format=auto,trim=0;632;0;455,width=1067,height=1920/image/454126948/1e8cb161-1b79-43f4-9ecb-7899a61d73ad.jpg",
+          "overlayBg": "rgba(201, 147, 137, 0.747)",
+          "overlayOpacity": "0",
+          "overlayNote": "Overlay exists but opacity=0, so image shows through",
+          "textColor": "rgb(255, 255, 255)"
+        },
+        {
+          "index": 5,
+          "description": "'das Helle' section + 'weiter zu traumsensibles Coaching' button",
+          "bg": "rgb(227, 174, 166)",
+          "hasBackgroundImage": true,
+          "imgSrc": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,format=auto,width=2560,height=2560/image/455291075/c972eeb0-9194-450c-96f0-7fe26331906b.jpg",
+          "overlayBg": "rgba(227, 174, 166, 0.773)",
+          "overlayOpacity": "0",
+          "overlayNote": "Overlay exists but opacity=0",
+          "textColor": "rgb(255, 255, 255)",
+          "buttonColor": "rgb(50, 51, 53) on rgb(255, 255, 255)"
+        }
+      ]
+    },
+    "traumasensibles-coaching": {
+      "url": "https://ichbinhierjetzt.ch/traumasensibles-coaching/",
+      "title": "Traumasensibles Coaching | ICH BIN HIER JETZT",
+      "sections": [
+        {
+          "index": 0,
+          "description": "'TRAUMASENSIBLES COACHING' heading + intro text about emotional wounds",
+          "bg": "rgb(227, 174, 166)",
+          "hasBackgroundImage": false,
+          "imgSrc": "none",
+          "overlayBg": "none",
+          "overlayOpacity": "n/a",
+          "textColor": "white (inferred)"
+        },
+        {
+          "index": 1,
+          "description": "'All unsere Erfahrungen sind in unserem Koerpersystem verwoben' - stars poem",
+          "bg": "rgb(201, 147, 137)",
+          "hasBackgroundImage": true,
+          "imgSrc": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,format=auto,trim=416;864;789;538,width=976,height=1920/image/462923935/6f12d5fc-504f-46b8-8101-fc95d9de34f3.jpg",
+          "overlayBg": "rgba(201, 147, 137, 0.747)",
+          "overlayOpacity": "0",
+          "overlayNote": "Overlay exists but opacity=0"
+        },
+        {
+          "index": 2,
+          "description": "'Gemeinsam finden wir...' + bullet points + 'weiter zu Jin Shin Jyutsu' button",
+          "bg": "rgb(227, 174, 166)",
+          "hasBackgroundImage": true,
+          "imgSrc": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,format=auto,width=1920,height=595/image/455520664/ffd67c2b-4d1a-40e4-bcf5-29a85c22c192.jpg",
+          "overlayBg": "rgba(227, 174, 166, 0.773)",
+          "overlayOpacity": "1",
+          "overlayNote": "Overlay ACTIVE (opacity=1) - rose tint over image"
+        }
+      ]
+    },
+    "jin-shin-jyutsu": {
+      "url": "https://ichbinhierjetzt.ch/jin-shin-jyutsu/",
+      "title": "Jin Shin Jyutsu | ICH BIN HIER JETZT",
+      "sections": [
+        {
+          "index": 0,
+          "description": "'Jin Shin Jyutsu, ein uraltes Weisheitswissen aus dem Osten' + explanation text",
+          "bg": "rgb(227, 174, 166)",
+          "hasBackgroundImage": true,
+          "imgSrc": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,format=auto,trim=0;60;0;61,width=1280,height=1280/image/464717376/edacb953-a9cc-432b-8966-ebd31118cee5.jpg",
+          "imgNote": "Hands image (content image in columns, not full bg)",
+          "overlayBg": "none",
+          "overlayOpacity": "n/a"
+        },
+        {
+          "index": 1,
+          "description": "'Klangwelten' heading + 'weiter zu Ueber mich' button",
+          "bg": "rgb(137, 191, 201)",
+          "hasBackgroundImage": true,
+          "imgSrc": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,format=auto,trim=0;0;0;0,width=599,height=600/image/480908898/5d01800d-37f2-4da7-b892-cbadad483d86.jpg",
+          "imgNote": "Singing bowl / Klangschale image",
+          "overlayBg": "none",
+          "overlayOpacity": "n/a"
+        }
+      ]
+    },
+    "doris-r-mumenthaler": {
+      "url": "https://ichbinhierjetzt.ch/doris-r.-mumenthaler/",
+      "title": "Doris R. Mumenthaler | ICH BIN HIER JETZT",
+      "sections": [
+        {
+          "index": 0,
+          "description": "Portrait section - 'Ich freue mich ueber jede Begegnung...' + 'Schenken und Empfangen'",
+          "bg": "rgb(227, 174, 166)",
+          "hasBackgroundImage": true,
+          "imgSrc": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,format=auto,trim=0;0;0;0,width=767,height=1080/image/493963361/12e82919-fe5e-46d7-8fc7-e8b214a1cc12.jpg",
+          "imgNote": "Portrait photo of Doris (content image in columns)",
+          "overlayBg": "none",
+          "overlayOpacity": "n/a"
+        },
+        {
+          "index": 1,
+          "description": "'DA BIN ICH HEUTE AKTIV' - current activities list",
+          "bg": "rgb(201, 147, 137)",
+          "hasBackgroundImage": true,
+          "imgSrc": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,format=auto,width=2560,height=903/image/463735733/e5e9f3a3-c918-4655-bc60-ab3d60fe1404.jpg",
+          "overlayBg": "rgba(201, 147, 137, 0.747)",
+          "overlayOpacity": "0",
+          "overlayNote": "Overlay exists but opacity=0"
+        },
+        {
+          "index": 2,
+          "description": "'DA WAR ICH FRUEHER AKTIV' + past career + therapy gratitude + 'weiter zu energetischer Ausgleich' button",
+          "bg": "rgb(227, 174, 166)",
+          "hasBackgroundImage": true,
+          "imgSrc": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,format=auto,trim=0;0;0;0,width=2560,height=476/image/466347180/f4221680-151b-435b-8608-55de23624451.jpg",
+          "overlayBg": "none",
+          "overlayOpacity": "n/a"
+        }
+      ]
+    },
+    "energetischer-ausgleich-kosten": {
+      "url": "https://ichbinhierjetzt.ch/energetischer-ausgleich-kosten/",
+      "title": "Energetischer Ausgleich / Kosten | ICH BIN HIER JETZT",
+      "sections": [
+        {
+          "index": 0,
+          "description": "'Energetischer Ausgleich / Kosten' - pricing info CHF 150/120",
+          "bg": "rgb(201, 147, 137)",
+          "hasBackgroundImage": true,
+          "imgSrc": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,format=auto,width=627,height=640/image/470702393/6db05deb-c5ac-467c-9e27-88ee58725eba.jpg",
+          "overlayBg": "rgba(201, 147, 137, 0.747)",
+          "overlayOpacity": "1",
+          "overlayNote": "Overlay ACTIVE (opacity=1) - rose tint over image"
+        },
+        {
+          "index": 1,
+          "description": "'weiter zu Kontakt' button section",
+          "bg": "rgb(227, 174, 166)",
+          "hasBackgroundImage": false,
+          "imgSrc": "none",
+          "overlayBg": "none",
+          "overlayOpacity": "n/a"
+        },
+        {
+          "index": 2,
+          "description": "Decorative image-only section (landscape/nature)",
+          "bg": "rgb(227, 174, 166)",
+          "hasBackgroundImage": true,
+          "imgSrc": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,format=auto,trim=0;0;0;0,width=2560,height=554/image/454126931/c653463b-29c1-4809-bcad-8b8c37fb215a.jpg",
+          "overlayBg": "none",
+          "overlayOpacity": "n/a"
+        }
+      ]
+    },
+    "kontakt": {
+      "url": "https://ichbinhierjetzt.ch/kontakt/",
+      "title": "Kontakt | ICH BIN HIER JETZT",
+      "sections": [
+        {
+          "index": 0,
+          "description": "'Schoen, dass du da bist' - contact intro + address (Erlach-Weg 27, CH-4143 Dornach)",
+          "bg": "rgb(227, 174, 166)",
+          "hasBackgroundImage": true,
+          "imgSrc": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,format=auto,width=1920,height=1920/image/462923895/227413b0-bc68-41b9-a937-c40282cb4775.jpg",
+          "overlayBg": "rgba(227, 174, 166, 0.773)",
+          "overlayOpacity": "1",
+          "overlayNote": "Overlay ACTIVE (opacity=1) - rose tint over image"
+        },
+        {
+          "index": 1,
+          "description": "Contact form section + 'Hier kannst Du mich kontaktieren' text",
+          "bg": "rgb(201, 147, 137)",
+          "hasBackgroundImage": false,
+          "imgSrc": "none",
+          "overlayBg": "none",
+          "overlayOpacity": "n/a"
+        },
+        {
+          "index": 2,
+          "description": "'weiter zu Galerie' button section",
+          "bg": "rgb(227, 174, 166)",
+          "hasBackgroundImage": false,
+          "imgSrc": "none",
+          "overlayBg": "none",
+          "overlayOpacity": "n/a"
+        }
+      ]
+    },
+    "galerie": {
+      "url": "https://ichbinhierjetzt.ch/galerie/",
+      "title": "Galerie | ICH BIN HIER JETZT",
+      "sections": [
+        {
+          "index": 0,
+          "description": "'Erinnere Dich, Du bist mehr als Du denkst...' intro poem",
+          "bg": "rgb(227, 174, 166)",
+          "hasBackgroundImage": false,
+          "imgSrc": "none",
+          "overlayBg": "none",
+          "overlayOpacity": "n/a",
+          "textColor": "rgb(255, 255, 255)"
+        },
+        {
+          "index": 1,
+          "description": "WASSER element - 'spuere und fuehle Du bist WASSER'",
+          "bg": "rgb(137, 191, 201)",
+          "hasBackgroundImage": true,
+          "imgSrc": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,format=auto,trim=0;907;0;845,width=267,height=480/image/480899872/749681f8-7ebb-44b9-814d-6e9ec3cf1663.jpg",
+          "overlayBg": "rgba(137, 191, 201, 0.76)",
+          "overlayOpacity": "0",
+          "overlayNote": "Overlay exists but opacity=0",
+          "textColor": "rgb(255, 255, 255)"
+        },
+        {
+          "index": 2,
+          "description": "FEUER element - 'spuere und fuehle Du bist FEUER'",
+          "bg": "rgb(201, 147, 137)",
+          "hasBackgroundImage": true,
+          "imgSrc": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,format=auto,width=2560,height=2495/image/466336931/ea5bbed0-bd0d-4d16-9a97-2aa6f2d99cc8.jpg",
+          "overlayBg": "rgba(201, 147, 137, 0.747)",
+          "overlayOpacity": "0",
+          "textColor": "rgb(255, 255, 255)"
+        },
+        {
+          "index": 3,
+          "description": "LUFT element - 'spuere und fuehle Du bist LUFT'",
+          "bg": "rgb(137, 191, 201)",
+          "hasBackgroundImage": true,
+          "imgSrc": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,format=auto,width=1920,height=590/image/454126929/383781c1-7e3f-4a31-9648-a557ba46856a.jpg",
+          "overlayBg": "rgba(137, 191, 201, 0.76)",
+          "overlayOpacity": "0",
+          "textColor": "rgb(255, 255, 255)"
+        },
+        {
+          "index": 4,
+          "description": "ERDE element - 'spuere und fuehle Du bist ERDE'",
+          "bg": "rgb(201, 147, 137)",
+          "hasBackgroundImage": true,
+          "imgSrc": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,format=auto,width=1920,height=405/image/454126949/6bafe5f6-205c-481a-a871-0ab063275657.jpg",
+          "overlayBg": "rgba(201, 147, 137, 0.747)",
+          "overlayOpacity": "0",
+          "textColor": "rgb(255, 255, 255)"
+        },
+        {
+          "index": 5,
+          "description": "BEWUSSTSEIN - 'SEI EINS MIT DEINEM BEWUSSTSEIN' + 'ICH BIN HIER JETZT' sub-heading",
+          "bg": "rgb(166, 219, 227)",
+          "bgNote": "Unique lighter teal - only section with this color",
+          "hasBackgroundImage": true,
+          "imgSrc": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,format=auto,trim=0;0;0;0,width=2560,height=2560/image/491543252/c800832a-de55-44b8-bbc0-05dba66f49ae.jpg",
+          "overlayBg": "none",
+          "overlayOpacity": "n/a",
+          "textColor": "rgb(50, 51, 53)",
+          "textNote": "DARK text on this section - unique among galerie sections"
+        },
+        {
+          "index": 6,
+          "description": "'FREUE DICH, SEI LEBENDIG UND GLUECKLICH, LIEBE - ES IST DEIN GEBURTSRECHT'",
+          "bg": "rgb(201, 147, 137)",
+          "hasBackgroundImage": true,
+          "imgSrc": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,format=auto,width=2560,height=625/image/454126935/1724c3b3-2cf3-42e1-86a3-98db7d55f4d2.jpg",
+          "overlayBg": "rgba(201, 147, 137, 0.747)",
+          "overlayOpacity": "1",
+          "overlayNote": "Overlay ACTIVE (opacity=1) - rose tint over image",
+          "textColor": "rgb(255, 255, 255)"
+        },
+        {
+          "index": 7,
+          "description": "Gallery photo 1 (image-only, no text)",
+          "bg": "rgb(227, 174, 166)",
+          "hasBackgroundImage": true,
+          "imgSrc": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,format=auto,trim=0;151;0;151,width=320,height=320/image/474768603/c8ab13d1-87d1-4680-9aea-3624573bfd5d.jpg",
+          "overlayBg": "none",
+          "overlayOpacity": "n/a"
+        },
+        {
+          "index": 8,
+          "description": "Gallery photo 2 (image-only, no text)",
+          "bg": "rgb(201, 147, 137)",
+          "hasBackgroundImage": true,
+          "imgSrc": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,format=auto,trim=0;0;0;0,width=1920,height=1920/image/508396866/4391b679-e491-4440-b1a8-6910df975e3a.jpg",
+          "overlayBg": "none",
+          "overlayOpacity": "n/a"
+        },
+        {
+          "index": 9,
+          "description": "Gallery photo 3 (image-only, no text)",
+          "bg": "rgb(227, 174, 166)",
+          "hasBackgroundImage": true,
+          "imgSrc": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,format=auto,trim=0;0;0;0,width=800,height=800/image/491540461/8951fe7e-f788-4aa3-ac92-b14fa1dac58d.jpg",
+          "overlayBg": "none",
+          "overlayOpacity": "n/a"
+        },
+        {
+          "index": 10,
+          "description": "Gallery photo 4 (image-only, no text)",
+          "bg": "rgb(201, 147, 137)",
+          "hasBackgroundImage": true,
+          "imgSrc": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,format=auto,trim=0;0;0;0,width=2560,height=2560/image/491536797/b6242c46-3bbf-4975-916f-29a52451f22d.jpg",
+          "overlayBg": "none",
+          "overlayOpacity": "n/a"
+        },
+        {
+          "index": 11,
+          "description": "Gallery photo 5 (image-only, no text)",
+          "bg": "rgb(227, 174, 166)",
+          "hasBackgroundImage": true,
+          "imgSrc": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,format=auto,trim=504;0;504;0,width=2560,height=2560/image/493621471/663cb1ec-53cf-432c-97fd-c5fe3c15db42.jpg",
+          "overlayBg": "none",
+          "overlayOpacity": "n/a"
+        },
+        {
+          "index": 12,
+          "description": "Gallery photo 6 (image-only, no text)",
+          "bg": "rgb(201, 147, 137)",
+          "hasBackgroundImage": true,
+          "imgSrc": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,format=auto,trim=0;0;0;0,width=1024,height=1024/image/525838716/a2de196c-a85d-4bf5-aee0-b8af48b7d781.jpg",
+          "overlayBg": "none",
+          "overlayOpacity": "n/a"
+        },
+        {
+          "index": 13,
+          "description": "Gallery photo 7 (image-only, no text)",
+          "bg": "rgb(227, 174, 166)",
+          "hasBackgroundImage": true,
+          "imgSrc": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,format=auto,trim=0;1029;0;1030,width=800,height=800/image/480905064/3370db37-66fc-4645-bf0b-752d91150377.jpg",
+          "overlayBg": "none",
+          "overlayOpacity": "n/a"
+        },
+        {
+          "index": 14,
+          "description": "Copyright notice - 'All photos on this webpage are from my archive...'",
+          "bg": "rgb(227, 174, 166)",
+          "hasBackgroundImage": false,
+          "imgSrc": "none",
+          "overlayBg": "none",
+          "overlayOpacity": "n/a",
+          "textColor": "rgb(255, 255, 255)"
+        }
+      ]
+    }
+  },
+  "overlay_behavior_summary": {
+    "explanation": "Jimdo uses two overlay classes: OAT9p (always transparent rgba(0,0,0,0)) and qTwpq (the actual color overlay). The qTwpq overlay has a background-color with alpha BUT also an opacity property. When opacity=0, the overlay is invisible and the background image shows through unmodified. When opacity=1, the overlay tints the image.",
+    "active_overlays": [
+      "Homepage #1 (jedoch): rgba(255, 255, 255, 0.8) opacity=1 -- white wash over image",
+      "Traumasensibles #2 (Gemeinsam): rgba(227, 174, 166, 0.773) opacity=1 -- rose tint",
+      "Energetischer #0 (Kosten): rgba(201, 147, 137, 0.747) opacity=1 -- dark rose tint",
+      "Kontakt #0 (Schoen dass du): rgba(227, 174, 166, 0.773) opacity=1 -- rose tint",
+      "Galerie #6 (FREUE DICH): rgba(201, 147, 137, 0.747) opacity=1 -- dark rose tint"
+    ],
+    "inactive_overlays_opacity_0": [
+      "Homepage #2 (Dunklen/Licht): rgba(201, 147, 137, 0.747) opacity=0",
+      "Homepage #4 (Wirklichkeit): rgba(201, 147, 137, 0.747) opacity=0",
+      "Homepage #5 (das Helle): rgba(227, 174, 166, 0.773) opacity=0",
+      "Traumasensibles #1 (Erfahrungen): rgba(201, 147, 137, 0.747) opacity=0",
+      "Doris #1 (HEUTE AKTIV): rgba(201, 147, 137, 0.747) opacity=0",
+      "Galerie #1 (WASSER): rgba(137, 191, 201, 0.76) opacity=0",
+      "Galerie #2 (FEUER): rgba(201, 147, 137, 0.747) opacity=0",
+      "Galerie #3 (LUFT): rgba(137, 191, 201, 0.76) opacity=0",
+      "Galerie #4 (ERDE): rgba(201, 147, 137, 0.747) opacity=0"
+    ]
+  },
+  "section_pattern": {
+    "alternating_bg": "Sections alternate between rgb(227, 174, 166) (rose-light) and rgb(201, 147, 137) (rose-dark)",
+    "galerie_elements": "Element sections (WASSER/LUFT) use rgb(137, 191, 201) (teal), element sections (FEUER/ERDE) use rgb(201, 147, 137) (rose-dark)",
+    "bewusstsein_special": "Uses unique rgb(166, 219, 227) (light-teal) with dark text rgb(50, 51, 53)",
+    "gallery_photos": "Alternating rose-light/rose-dark backgrounds behind full-bleed images"
+  }
+}
