@@ -151,43 +151,6 @@
     }
   })();
   </script>
-  <script>
-  // Design Panel — Live Parameter Editing (dev-only, ?panel)
-  (function() {
-    if (!location.search.includes('panel') && !localStorage.getItem('design-panel')) return;
-
-    var panel = document.createElement('div');
-    panel.id = 'design-panel';
-    panel.innerHTML = '<button class="dp-close" onclick="this.parentElement.remove()">&times;</button><h3>Design Panel</h3>';
-
-    var style = document.createElement('style');
-    style.textContent = '#design-panel{position:fixed;top:10px;right:10px;z-index:10000;background:#1a1a1a;color:#e5e5e5;padding:1rem 1.2rem;border-radius:12px;font-family:-apple-system,sans-serif;font-size:13px;width:280px;box-shadow:0 8px 30px rgba(0,0,0,0.4);max-height:90vh;overflow-y:auto}#design-panel h3{margin:0 0 0.8rem;font-size:14px;font-weight:600}#design-panel label{display:flex;justify-content:space-between;margin:0.4rem 0 0.2rem;font-size:12px;color:#aaa}#design-panel input[type=range]{width:100%;margin:0.2rem 0 0.6rem;accent-color:#C99389}#design-panel .dp-close{position:absolute;top:8px;right:10px;background:none;border:none;color:#888;cursor:pointer;font-size:18px}#design-panel .dp-close:hover{color:#fff}';
-    document.head.appendChild(style);
-
-    var params = [
-      { label: 'Section Padding', min: 1, max: 8, step: 0.25, val: 4, unit: 'rem', apply: function(v) { document.querySelectorAll('.section').forEach(function(s) { s.style.padding = v + 'rem 2rem'; }); } },
-      { label: 'H1 Size', min: 24, max: 72, step: 1, val: 48, unit: 'px', apply: function(v) { document.querySelectorAll('h1').forEach(function(el) { el.style.fontSize = v + 'px'; }); } },
-      { label: 'H2 Size', min: 20, max: 56, step: 1, val: 36, unit: 'px', apply: function(v) { document.querySelectorAll('h2').forEach(function(el) { el.style.fontSize = v + 'px'; }); } },
-      { label: 'Body Size', min: 14, max: 24, step: 1, val: 18, unit: 'px', apply: function(v) { document.querySelectorAll('p').forEach(function(el) { el.style.fontSize = v + 'px'; }); } },
-      { label: 'Line Height', min: 1.2, max: 2.2, step: 0.1, val: 1.6, unit: '', apply: function(v) { document.querySelectorAll('p').forEach(function(el) { el.style.lineHeight = v; }); } },
-      { label: 'Content Max-Width', min: 500, max: 1200, step: 10, val: 700, unit: 'px', apply: function(v) { document.querySelectorAll('.content-narrow').forEach(function(el) { el.style.maxWidth = v + 'px'; }); } }
-    ];
-
-    params.forEach(function(p) {
-      var lbl = document.createElement('label');
-      lbl.innerHTML = '<span>' + p.label + '</span><span class="dp-val">' + p.val + p.unit + '</span>';
-      var inp = document.createElement('input');
-      inp.type = 'range'; inp.min = p.min; inp.max = p.max; inp.step = p.step; inp.value = p.val;
-      inp.addEventListener('input', function() {
-        lbl.querySelector('.dp-val').textContent = this.value + p.unit;
-        p.apply(parseFloat(this.value));
-      });
-      panel.appendChild(lbl);
-      panel.appendChild(inp);
-    });
-
-    document.body.appendChild(panel);
-  })();
-  </script>
+  <script src="/js/dev-panel.js"></script>
 </body>
 </html>
